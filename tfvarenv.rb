@@ -5,20 +5,20 @@
 class Tfvarenv < Formula
   desc ""
   homepage ""
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/marcy326/tfvarenv/releases/download/v0.0.1/tfvarenv_Darwin_x86_64.tar.gz"
-      sha256 "3bb1d4e40dd9c33e744bcfe11e82b12435598226c497bac7f29575461edbb078"
+      url "https://github.com/marcy326/tfvarenv/releases/download/v0.0.2/tfvarenv_v0.0.2_darwin_amd64.tar.gz"
+      sha256 "233092cbd606d30a698476ed4e24d629e2e1e39b11dee861f2fd238a6d72e80f"
 
       def install
         bin.install "tfvarenv"
       end
     end
     on_arm do
-      url "https://github.com/marcy326/tfvarenv/releases/download/v0.0.1/tfvarenv_Darwin_arm64.tar.gz"
-      sha256 "123408c33630c3a6ae5e5f48252b631043a4fc0fe0503fbe3fc8ecb9051d2869"
+      url "https://github.com/marcy326/tfvarenv/releases/download/v0.0.2/tfvarenv_v0.0.2_darwin_arm64.tar.gz"
+      sha256 "fd08d68c6ed069653fb9d7ea2ad02b6bab9c63619ed2d0f5d286c2ae9fd5ece7"
 
       def install
         bin.install "tfvarenv"
@@ -29,8 +29,8 @@ class Tfvarenv < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marcy326/tfvarenv/releases/download/v0.0.1/tfvarenv_Linux_x86_64.tar.gz"
-        sha256 "b36d4ffda658bc952e3abee4d87a6703bb7bf0fda27d91364d08def617103950"
+        url "https://github.com/marcy326/tfvarenv/releases/download/v0.0.2/tfvarenv_v0.0.2_linux_amd64.tar.gz"
+        sha256 "89f2d75b60ea6272e2e3a2c3eb695ed6fd3b77b693a3a97bc85565ec6c84bf66"
 
         def install
           bin.install "tfvarenv"
@@ -39,8 +39,8 @@ class Tfvarenv < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marcy326/tfvarenv/releases/download/v0.0.1/tfvarenv_Linux_arm64.tar.gz"
-        sha256 "2de963edfadf955a90f98b1278b3d258601d0d3e524276db3529927b1160c425"
+        url "https://github.com/marcy326/tfvarenv/releases/download/v0.0.2/tfvarenv_v0.0.2_linux_arm64.tar.gz"
+        sha256 "dd07b8d4ce44d562bd07bb15dfb1af49936f90154d62229b005f0757da30baca"
 
         def install
           bin.install "tfvarenv"
