@@ -5,20 +5,20 @@
 class Tfvarenv < Formula
   desc ""
   homepage ""
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marcy326/tfvarenv/releases/download/v0.3.1/tfvarenv_v0.3.1_darwin_amd64.tar.gz"
-      sha256 "39310f109a0d1d22446054584e70f830b9a6f80d7118960d1eefb1e9f3ba54e9"
+      url "https://github.com/marcy326/tfvarenv/releases/download/v0.3.2/tfvarenv_v0.3.2_darwin_amd64.tar.gz"
+      sha256 "7536c304b96b2b5e25df838f14fa127d0e81b6e4571e25798b7e952b26d4a0a2"
 
       def install
         bin.install "tfvarenv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marcy326/tfvarenv/releases/download/v0.3.1/tfvarenv_v0.3.1_darwin_arm64.tar.gz"
-      sha256 "4ace3c552a0a2572557c9072a312333aa52e22b9296224586c849c38db3d3139"
+      url "https://github.com/marcy326/tfvarenv/releases/download/v0.3.2/tfvarenv_v0.3.2_darwin_arm64.tar.gz"
+      sha256 "5e8f706654f2989f76ed7d566332258ae78a4d54df68c5ec468ae0787362d582"
 
       def install
         bin.install "tfvarenv"
@@ -29,8 +29,8 @@ class Tfvarenv < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marcy326/tfvarenv/releases/download/v0.3.1/tfvarenv_v0.3.1_linux_amd64.tar.gz"
-        sha256 "2251efd98c51bae1d8fb8091335fa69333cd9a98272f7e2c1c9d4dd4b21a0f2d"
+        url "https://github.com/marcy326/tfvarenv/releases/download/v0.3.2/tfvarenv_v0.3.2_linux_amd64.tar.gz"
+        sha256 "c3d958c46e8112fe98e34393667a97edae1a4e7d3711824d0447beebab897ada"
 
         def install
           bin.install "tfvarenv"
@@ -39,8 +39,8 @@ class Tfvarenv < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marcy326/tfvarenv/releases/download/v0.3.1/tfvarenv_v0.3.1_linux_arm64.tar.gz"
-        sha256 "6d2f1fbd4d73cd8661ac9e552e78af5504fbebc0169fc0c4034baf2076c07f58"
+        url "https://github.com/marcy326/tfvarenv/releases/download/v0.3.2/tfvarenv_v0.3.2_linux_arm64.tar.gz"
+        sha256 "047291fd899894063f106ab1d64f9328bd95061361733d01fce3d1aef1b7e1e8"
 
         def install
           bin.install "tfvarenv"
