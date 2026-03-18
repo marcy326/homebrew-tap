@@ -5,21 +5,21 @@
 class Sonyport < Formula
   desc "Unofficial macOS CLI for importing photos and videos from mounted Sony cameras"
   homepage "https://github.com/marcy326/sonyport"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/marcy326/sonyport/releases/download/v0.1.0/sonyport_0.1.0_darwin_amd64.zip"
-    sha256 "1fce48df6c9dd09dc0a206551323fa74f0e0365a4aeea5cf1ab9abd4d1c2e425"
+    url "https://github.com/marcy326/sonyport/releases/download/v0.1.1/sonyport_0.1.1_darwin_amd64.zip"
+    sha256 "e63d6401997463b762efa7320e6e9d0ed5f184d6c1275bd6127af551b4166bf1"
 
     define_method(:install) do
       bin.install "sonyport"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/marcy326/sonyport/releases/download/v0.1.0/sonyport_0.1.0_darwin_arm64.zip"
-    sha256 "824faaf79f8b31a4c413645fc4ae987b20270ae4ddd997b557d8dd47ef3cbc57"
+    url "https://github.com/marcy326/sonyport/releases/download/v0.1.1/sonyport_0.1.1_darwin_arm64.zip"
+    sha256 "59af57b46612f2a06947ecd780df77054274377b89bccedd84e4f5f42ea226f2"
 
     define_method(:install) do
       bin.install "sonyport"
